@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+void gotop(string what, string what_c, string file_in, string file_out){
+	string temp;
+	freopen(file_in, "r", stdin);
+	freopen(file_out, "w", stdout);
+	while (eof(stdin) != true){
+		cin>>temp;
+		if (temp == what) temp = what_c;
+		cout<<temp<<endl;
+	}
+	
+}
+void goback(string what_c, string what, string file_out, string file_in){
+	string temp;
+	freopen(file_in, "r", stdin);
+	freopen(file_out, "w", stdout);
+	while (eof(stdin) != true){
+		cin>>temp;
+		if (temp == what) temp = what_c;
+		cout<<temp<<endl;
+	}	
+}
+int main(){
+	return 0;
+}
